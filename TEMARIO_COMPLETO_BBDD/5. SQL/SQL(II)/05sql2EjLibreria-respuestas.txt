@@ -1,0 +1,223 @@
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -.
+1. Lista de libros disponibles con su autor y año de publicación
+ordenada por este último.
+
+
+ISBN            TITULO                                                       NOMBRE                    ANIO
+--------------- ------------------------------------------------------------ ------------------------- ----
+1243415243666   Los santos inocentes                                         Miguel Delibes            1997
+0482174555366   Noches Blancas                                               Fiodor Dostoievski        1998
+5463467723747   Don Quijote de la Mancha                                     Miguel de Cervantes       2000
+4554672899910   La sombra del viento                                         Carlos Ruiz Zafon         2002
+8233771378567   Todo bajo el cielo                                           Matilde Asensi            2008
+1235271378662   La catedral del mar                                          Ildefonso Falcones        2009
+0853477468299   La sangre de los inocentes                                   Julia Navarro             2011
+
+ 7 rows selected 
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+2. Lista de libros disponibles publicados después del año 2000.
+
+
+ISBN            TITULO                                                       ANIO PRECIOCOMPRA PRECIOVENTA
+--------------- ------------------------------------------------------------ ---- ------------ -----------
+8233771378567   Todo bajo el cielo                                           2008         9.45       13.45
+1235271378662   La catedral del mar                                          2009         12.5       19.25
+4554672899910   La sombra del viento                                         2002           19       33.15
+0853477468299   La sangre de los inocentes                                   2011         9.45       13.45
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+3. Lista de Clientes que han realizado algún pedido.
+
+IDCLIENTE  NOMBRE                  
+---------- -------------------------
+0000002    Angel Garcia             
+0000001    Margarita Sanchez        
+0000004    Rosa Prieto              
+0000005    Ambrosio Perez           
+0000003    Pedro Santillana         
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+4. Lista de clientes que han adquirido el libro con ISBN=4554672899910.
+
+IDCLIENTE  NOMBRE                  
+---------- -------------------------
+0000002    Angel Garcia             
+0000005    Ambrosio Perez           
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+5. Lista de los clientes y los libros adquiridos por ellos cuyo
+nombre (del cliente) contenga 'San'.
+
+
+IDCLIENTE  NOMBRE                    TITULO                                                     
+---------- ------------------------- ------------------------------------------------------------
+0000001    Margarita Sanchez         Todo bajo el cielo                                          
+0000001    Margarita Sanchez         Don Quijote de la Mancha                                    
+0000001    Margarita Sanchez         Noches Blancas                                              
+0000003    Pedro Santillana          Todo bajo el cielo                                          
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+6. Lista de Clientes que hayan comprado libros de más de 10 euros.
+
+IDCLIENTE  NOMBRE                  
+---------- -------------------------
+0000002    Angel Garcia             
+0000001    Margarita Sanchez        
+0000004    Rosa Prieto              
+0000005    Ambrosio Perez           
+0000003    Pedro Santillana         
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+7. Clientes y fecha de pedidos que han realizado que no han sido
+expedidos aun.
+
+
+IDCLIENTE  NOMBRE                    FECHAPEDIDO
+---------- ------------------------- -----------
+0000001    Margarita Sanchez         01/12/2011 
+0000003    Pedro Santillana          04/12/2011 
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+8. Lista de clientes que NO han comprado libros de precio superior
+a 10 euros.
+
+NOMBRE                  
+-------------------------
+Lola Arribas             
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+9. Lista de libros vendidos con precio superior a 30 euros o
+publicados antes del año 2000
+
+
+TITULO                                                       ANIO PRECIOVENTA
+------------------------------------------------------------ ---- -----------
+La sombra del viento                                         2002       33.15
+Don Quijote de la Mancha                                     2000       73.45
+Los santos inocentes                                         1997       15.75
+Noches Blancas                                               1998        9.45
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10. Clientes que han hecho más de un pedido el mismo día.
+
+NOMBRE                  
+-------------------------
+Margarita Sanchez        
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+11. Lista de títulos de libros vendidos y cantidad.
+
+ISBN            TITULO                                                                             Numero ejemplares
+--------------- ------------------------------------------------------------ ---------------------------------------
+4554672899910   La sombra del viento                                                                               2
+1243415243666   Los santos inocentes                                                                               2
+8233771378567   Todo bajo el cielo                                                                                 8
+5463467723747   Don Quijote de la Mancha                                                                           5
+0482174555366   Noches Blancas                                                                                     1
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+12. Lista de Clientes junto al importe total gastado en la librería.
+
+IDCLIENTE  NOMBRE                                              Importe total
+---------- ------------------------- ---------------------------------------
+0000002    Angel Garcia                                                62.35
+0000004    Rosa Prieto                                                 13.45
+0000001    Margarita Sanchez                                           169.8
+0000005    Ambrosio Perez                                             269.25
+0000003    Pedro Santillana                                            67.25
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+13. Ganancias obtenidas por la librería con las ventas.
+
+
+                           Total ventas                           Total compras  Ganancias
+--------------------------------------- --------------------------------------- ----------
+                                  582.1                                   383.5      198.6
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+14. Lista de importe total de pedidos por fecha, que se hayan realizado
+después del 01/12/2011 y no hayan sido expedidos.
+
+FECHAPEDIDO                           Importe total
+----------- ---------------------------------------
+01/12/2011                                     9.45
+04/12/2011                                    67.25
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+15. Pedidos con importe superior a 100 euros.
+
+IDPEDIDO   FECHAPEDIDO                          Importe pedido
+---------- ----------- ---------------------------------------
+0000001P   01/12/2011                                   160.35
+0000005P   03/12/2011                                   269.25
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+16. Pedidos con importe total que contengan más de un titulo.
+
+IDPEDIDO   FECHAPEDIDO                          Importe pedido                            Num. Titulos
+---------- ----------- --------------------------------------- ---------------------------------------
+0000001P   01/12/2011                                   160.35                                       2
+0000003P   02/12/2011                                    62.35                                       3
+0000005P   03/12/2011                                   269.25                                       3
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+17. Pedidos con importe total que contengan más de 4 libros (ejemplares).
+
+IDPEDIDO   FECHAPEDIDO                          Importe pedido                         Num. Ejemplares
+---------- ----------- --------------------------------------- ---------------------------------------
+0000006P   04/12/2011                                    67.25                                       5
+0000005P   03/12/2011                                   269.25                                       5
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+18. Lista de libros más caros.
+
+
+TITULO                                                       PRECIOVENTA
+------------------------------------------------------------ -----------
+Don Quijote de la Mancha                                           73.45
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+19. Libros de los que no se haya vendido ningún ejemplar o cuyo beneficio sea inferior a 5 euros.
+
+
+ISBN            TITULO                                                     
+--------------- ------------------------------------------------------------
+8233771378567   Todo bajo el cielo                                          
+1235271378662   La catedral del mar                                         
+0853477468299   La sangre de los inocentes                                  
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20. Clientes que hayan comprado más de un ejemplar de un título en alguna ocasión.
+
+-- Se interpreta como los clientes que han comprado mas de un ejemplar
+-- de un mismo libro en un mismo pedido.
+
+IDCLIENTE  NOMBRE                  
+---------- -------------------------
+0000001    Margarita Sanchez        
+0000003    Pedro Santillana         
+0000005    Ambrosio Perez           
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+21. Lista de Nombre de cliente, numero de pedido, isbn y título de'
+libros adquiridos. Si no han adquirido ningún libro mostrar el'
+nombre del cliente también.'
+
+
+IDCLIENTE  NOMBRE                    IDPEDIDO   ISBN            TITULO                                                     
+---------- ------------------------- ---------- --------------- ------------------------------------------------------------
+0000001    Margarita Sanchez         0000001P   5463467723747   Don Quijote de la Mancha                                    
+0000001    Margarita Sanchez         0000001P   8233771378567   Todo bajo el cielo                                          
+0000001    Margarita Sanchez         0000002P   0482174555366   Noches Blancas                                              
+0000002    Angel Garcia              0000003P   1243415243666   Los santos inocentes                                        
+0000002    Angel Garcia              0000003P   4554672899910   La sombra del viento                                        
+0000002    Angel Garcia              0000003P   8233771378567   Todo bajo el cielo                                          
+0000003    Pedro Santillana          0000006P   8233771378567   Todo bajo el cielo                                          
+0000004    Rosa Prieto               0000004P   8233771378567   Todo bajo el cielo                                          
+0000005    Ambrosio Perez            0000005P   1243415243666   Los santos inocentes                                        
+0000005    Ambrosio Perez            0000005P   4554672899910   La sombra del viento                                        
+0000005    Ambrosio Perez            0000005P   5463467723747   Don Quijote de la Mancha                                    
+0000006    Lola Arribas                                                                                                     
+

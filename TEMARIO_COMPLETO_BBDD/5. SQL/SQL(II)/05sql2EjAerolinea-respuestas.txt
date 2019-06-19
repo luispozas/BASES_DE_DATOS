@@ -1,0 +1,134 @@
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+1.  Código y nombre de los pilotos certificados para pilotar aviones Boeing.
+
+
+       EID NOMBRE                       
+---------- ------------------------------
+ 567354612 Lisa Walker                   
+ 269734834 George Wright                 
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+2.  Código de aviones que pueden hacer el recorrido de Los Ángeles a Chicago
+sin repostar.
+
+
+       AID NOMBRE                       
+---------- ------------------------------
+         1 Boeing 747-400                
+         3 Airbus A340-300               
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+3.  Pilotos certificados para operar con aviones con una autonomía superior a
+3000 millas pero no certificados para aviones Boeing.
+
+
+       EID NOMBRE                       
+---------- ------------------------------
+ 573284895 Eric Cooper                   
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+4.  Empleados con el salario más elevado.
+
+
+       EID NOMBRE                            SALARIO
+---------- ------------------------------ ----------
+ 269734834 George Wright                      289950
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+5.  Empleados con el segundo salario más alto.
+
+       EID NOMBRE                            SALARIO
+---------- ------------------------------ ----------
+ 567354612 Lisa Walker                        256481
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+6.  Empleados con mayor número de certificaciones para volar.
+
+       EID NOMBRE                                          Numero certificaciones
+---------- ------------------------------ ---------------------------------------
+ 269734834 George Wright                                                        5
+ 567354612 Lisa Walker                                                          5
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+7.  Empleados certificados para 3 modelos de avión.
+
+       EID NOMBRE                                       Numero de aviones certif.
+---------- ------------------------------ ---------------------------------------
+ 269734834 George Wright                                                        5
+ 567354612 Lisa Walker                                                          5
+ 573284895 Eric Cooper                                                          3
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+8.  Nombre de los aviones tales que todos los pilotos certificados para operar
+con ellos tengan salarios superiores a 80.000 euros.
+
+
+NOMBRE                       
+------------------------------
+Boeing 747-400                
+Airbus A340-300               
+British Aerospace Jetstream 41
+Embraer ERJ-145               
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+9.  Para cada piloto certificado para operar con más de 3 modelos de avión
+indicar el código de empleado y la autonomía máxima de los aviones que puede
+pilotar.
+
+
+       EID NOMBRE                                                Autonomia Maxima
+---------- ------------------------------ ---------------------------------------
+ 269734834 George Wright                                                     8430
+ 567354612 Lisa Walker                                                       8430
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+10. Nombre de los pilotos cuyo salario es inferior a la ruta más barata entre
+Los Ángeles y Honolulu.
+
+       EID NOMBRE                            SALARIO
+---------- ------------------------------ ----------
+ 574489457 Milo Brooks                            20
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+11. Mostrar el nombre de los aviones con autonomía de vuelo superior a 1.000
+millas junto con la media salarial de los pilotos certificados en dichos
+aviones.
+
+
+       AID NOMBRE                                                   Salario medio
+---------- ------------------------------ ---------------------------------------
+         5 Embraer ERJ-145                                              220251.33
+         4 British Aerospace Jetstream 41                               220251.33
+         3 Airbus A340-300                                              220251.33
+         1 Boeing 747-400                                                273215.5
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+12. Calcular la diferencia entre la media salarial de todos los empleados
+(incluidos los pilotos) y la de los pilotos.
+
+
+Diferencia
+----------
+   12849.5
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+13. Listar el nombre y los salarios de los empleados (no pilotos) cuyo salario
+sea superior a la media salarial de los pilotos.
+
+NOMBRE                            SALARIO
+------------------------------ ----------
+Joseph Thompson                    212156
+Patricia Jones                     223000
+Dorthy Lewis                       251300
+Angela Martinez                    212156
+
+.. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+14. Nombre de los pilotos certificados solo para modelos con autonomía superior
+a 1.000 millas.
+
+
+NOMBRE                       
+------------------------------
+Eric Cooper                   
+
